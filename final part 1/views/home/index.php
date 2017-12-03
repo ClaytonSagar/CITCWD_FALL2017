@@ -9,17 +9,14 @@
     }
 	?>
 	  <?php if(isset($message) && $message){ ?>
-
-
 		<div class="alert alert-<?php if(strpos($message, 'Incorrect') !== false) { echo 'danger'; } else { echo 'success'; } ?>">
-
 		<button type="button" class="close" data-dismiss="alert">×</button>
 			<?php if(isset($message)) echo $message?>
 		</div>
 	  <?php }?>
-	<h1>Latest News from <?php echo $rss_title; ?></h1>
-  </div>
 
+	<h1>Latest Earth News</h1>
+  </div>
   <?php
     foreach ($rss_feed as $article) {
       ?>
